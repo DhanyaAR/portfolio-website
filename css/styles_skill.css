@@ -1,0 +1,182 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+*{
+    box-sizing: border-box;
+} 
+
+section h1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.programming-lang{
+    margin: 15vh 5vw 10vh 5vw;
+}
+
+.lang{
+    display: grid;
+    gap: 20px ;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    margin: 2vh 0vw;
+}
+
+.badge {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+    font-weight: 500;
+  }
+  
+  .learning {
+    background-color: #be4305;
+    color: white;
+  }
+  
+  .proficient {
+    background-color: #027e36;
+    color: white;
+  }
+  
+  .basics {
+    background-color: #0673bc; 
+  }
+
+.logo{
+    position: relative;
+    z-index: 1;
+    height: 33vh;
+    width: auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(75, 74, 75);
+    border-radius: 2vh;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    will-change: transform;
+}
+
+.logo img{
+    height: 20vh;
+    width: auto;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+}
+
+.logo p{
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.frameworks{
+    margin: 0vh 5vw 10vh 5vw;
+}
+
+.libraries{
+    margin: 0vh 5vw 10vh 5vw;
+}
+
+
+.logo:hover, .logo:focus,.logo:active {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+@media (max-width: 1024px) {
+    section h1 {
+        font-size: 1.2rem; 
+    }
+    
+    .lang {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding: 6vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo p {
+        font-size: 1.17rem;
+    }
+
+    .logo img {
+        height: 13vh;
+    }
+}
+
+
+@media (max-width: 768px) {
+    section h1 {
+        font-size: 1.1rem; 
+    }
+
+    .programming-lang {
+        margin: 14vh 3vw 5vh 3vw; 
+    }
+
+    .lang {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        padding: 3vh 0;
+        width: 80%; 
+    }
+
+    .logo img {
+        height: 15vh; 
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .logo p {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    section h1{
+        font-size: 1.05rem
+    }
+    .lang {
+        grid-template-columns: 1fr; 
+    }
+
+    .logo {
+        height: auto; 
+        width: 90%; 
+        gap: 1vh;
+    }
+
+    .logo img {
+        height: 6vh;
+        margin-bottom: 0;
+    }
+
+    .logo p {
+        font-size: 0.9rem;
+        padding-top: 0.5vh;
+    }
+}
