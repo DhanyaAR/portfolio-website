@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_nav.css">
+    <link rel="stylesheet" href="css/styles_skill.css">
+    <link rel="stylesheet" href="css/styles_footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Dhanya's Portfolio</div>
+          
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+          
+            <div class="right" id="navMenu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+              </ul>
+            </div>
+          </nav>          
+    </header>
+    <main>
+        <section class="programming-lang">
+            <h1>Programming/Markup Languages</h1>
+            <div class="lang">
+                <div class="logo"><img src="images/python.png" alt="Python Logo"/><p>Python <span class="badge proficient">Proficient</span></p></div>
+                <div class="logo"><img src="images/c.png" alt="C Logo"/><p>C <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/HTML.webp" alt="HTML Logo"/><p>HTML <span class="badge proficient">Proficient</span></p></div>
+                <div class="logo"><img src="images/CSS.jpeg" alt="CSS Logo"/><p>CSS <span class="badge proficient">Proficient</span></p></div>
+                <div class="logo"><img src="images/javascript.webp" alt="JavaScript Logo"/><p>JavaScript<span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/Typescript.png" alt="TypeScript Logo"/><p>TypeScript <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/java.webp" alt="Java Logo"/><p>Java <span class="badge basics">Basics</span></p></div>
+      </div>
+            </div>
+        </section>
+        <section class="frameworks">
+            <h1>Framework/Toolkits</h1>
+            <div class="lang">
+                <div class="logo"><img src="images/react.png" alt="React"/><p>React <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/Nodejs.png" alt="Node.js"/><p>Node.js <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/express-js.png" alt="Express"/><p>Express.js <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/tailwind.png" alt="Tailwind"/><p>Tailwind CSS <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/mysql.png" alt="MySQL"/><p>MySQL <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/mongodb.png" alt="MongoDB"/><p>MongoDB <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/git.png" alt="Git"/><p>Git <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/github.png" alt="GitHub"/><p>GitHub <span class="badge basics">Basics</span></p></div>
+            </div>
+        </section>
+        <section class="libraries">
+            <h1>Python Libraries</h1>
+            <div class="lang">
+                <div class="logo"><img src="images/numpy.png" alt=""><p>NumPy <span class="badge proficient">Proficient</span></p></div>
+                <div class="logo"><img src="images/Pandas.jpg" alt=""><p>Pandas <span class="badge proficient">Proficient</span></p></div>
+                <div class="logo"><img src="images/scipy.png" alt=""><p>SciPy <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/matplotlib.png" alt=""><p>Matplotlib <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/seaborn.png" alt=""><p>Seaborn <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/Sympy.png" alt=""><p>SymPy <span class="badge basics">Basics</span></p></div>
+                <div class="logo"><img src="images/sklearn.jpg" alt=""><p>Sklearn <span class="badge learning">Exploring</span></p></div>
+                <div class="logo"><img src="images/opencv.jpg" alt=""><p>OpenCV <span class="badge learning">Exploring</span></p></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Dhanya. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById("navMenu");
+          menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
