@@ -1,0 +1,143 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(3, 1, 25);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(6, 1, 59);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+    z-index: 9999;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 5vw;
+    padding: 2vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    padding: 2vh;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 2vw;
+    padding: 3vh 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav ul li a:hover{
+    color: rgb(187, 145, 227);
+    font-size: 1.04rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 5vw;
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1100px) and (orientation: landscape) {
+    .left{
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    nav {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 1.5vh 0;
+      gap: 0;
+      background-color: rgb(6, 1, 59) ;
+      color: rgb(249, 248, 248);
+    }
+    
+
+    .hamburger {
+      display: block;
+      font-size: 1.6rem;
+      margin-left: auto;
+      margin-right: 5vw;
+    }
+  
+    .left {
+      font-size: 1.2rem; 
+      margin: 1vh 5vw;
+      padding: 0;
+    }
+  
+    .right {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(6, 1, 59);
+      padding-bottom: 2vh;
+    }
+  
+    .right.show {
+      display: flex;
+    }
+  
+    .right ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .right ul li {
+      display: block;
+      margin: 1vh 0;
+    }
+  
+    nav ul li a {
+      font-size: 1rem; 
+    }
+  }
+  
+
