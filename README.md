@@ -46,24 +46,25 @@ Check out the full walkthrough video covering all pages and design decisions her
 - Email Integration: Nodemailer
 
 
+
 ## 🧩 System Architecture
 
 The architecture follows a simple client-server model, showcasing both frontend craftsmanship and backend integration:
 
 - 📄 Frontend (Client Side)
-    - • Entire site is built with HTML, CSS, and JavaScript.
-    - • Each page - Home, About, Skills, Projects, Contact - is statically rendered and fully responsive.
-    - • All interactions are handled on the client, except for form submission.
+     • Entire site is built with HTML, CSS, and JavaScript.
+     • Each page - Home, About, Skills, Projects, Contact - is statically rendered and fully responsive.
+     • All interactions are handled on the client, except for form submission.
       
 - 📨 Contact Form Submission (Client → Server)
-    - • On the Contact page, the user submits a message via a form.
-    - • This triggers a POST request to an Express.js server route (/send-email).
-    - • Data (name, email, message) is validated and sent using Nodemailer to my Gmail inbox.
-    - • A success/failure response is returned to the frontend.
+     • On the Contact page, the user submits a message via a form.
+     • This triggers a POST request to an Express.js server route (/send-email).
+     • Data (name, email, message) is validated and sent using Nodemailer to my Gmail inbox.
+     • A success/failure response is returned to the frontend.
       
 - 📤 Email Handling (Server Side)
-    - • The Express backend processes the request and securely sends the email via Nodemailer.
-    - • No database is involved, making the backend lightweight and purpose-driven.
+     • The Express backend processes the request and securely sends the email via Nodemailer.
+     • No database is involved, making the backend lightweight and purpose-driven.
       
 This minimal yet complete architecture highlights how frontend and backend can communicate seamlessly, even in a primarily static portfolio.
 
@@ -71,7 +72,7 @@ This minimal yet complete architecture highlights how frontend and backend can c
 
 ## 🛠️ System Flow Diagram
 
-![System Design](./screenshots/system_design.png)
+![System Design](./screenshots/system-design.png)
 
 
 ## ⚙️ Setup Instructions
@@ -113,27 +114,27 @@ Open index.html using a Live Server extension (such as in VS Code) or simply ope
 
 ## 🖼️ Sample Screenshots
 
-🏠 Home Page
+#### 🏠 Home Page: 
 A responsive landing page offering a quick yet meaningful introduction to who I am, with quick access to my resume and social links through intuitive icons.
 
 ![Home Page](screenshots/home.png)
 
-👩‍🎓 About Page
+#### 👩‍🎓 About Page: 
 Showcases my academic background, skill progress bar, and the motivation behind choosing AI/ML.
 
 ![About Page](screenshots/about.png)
 
-🛠️ Skills Page
+#### 🛠️ Skills Page: 
 Highlights my tech stack, organized by categories, with intuitive icons and badges that indicate proficiency levels.
 
 ![Skills Page](screenshots/skills.png)
 
-📁 Projects Page
+#### 📁 Projects Page: 
 Interactive cards with screenshots, brief descriptions, and tech stack — each linked to its GitHub repo.
 
 ![Project Page](screenshots/project.png)
 
-📬 Contact Page
+#### 📬 Contact Page: 
 Fully functional contact form powered by Node.js, Express, and Nodemailer — lets users message me directly.
 
 ![Contact Page](screenshots/contact.png)
