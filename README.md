@@ -52,19 +52,19 @@ Check out the full walkthrough video covering all pages and design decisions her
 The architecture follows a simple client-server model, showcasing both frontend craftsmanship and backend integration:
 
 - 📄 Frontend (Client Side)
-     - • Entire site is built with HTML, CSS, and JavaScript.
-     - • Each page - Home, About, Skills, Projects, Contact - is statically rendered and fully responsive.
-     - • All interactions are handled on the client, except for form submission.
+     - Entire site is built with HTML, CSS, and JavaScript.
+     - Each page - Home, About, Skills, Projects, Contact - is statically rendered and fully responsive.
+     - All interactions are handled on the client, except for form submission.
       
 - 📨 Contact Form Submission (Client → Server)
-     - • On the Contact page, the user submits a message via a form.
-     - • This triggers a POST request to an Express.js server route (/send-email).
-     - • Data (name, email, message) is validated and sent using Nodemailer to my Gmail inbox.
-     - • A success/failure response is returned to the frontend.
+     - On the Contact page, the user submits a message via a form.
+     - This triggers a POST request to an Express.js server route (/send-email).
+     - Data (name, email, message) is validated and sent using Nodemailer to my Gmail inbox.
+     - A success/failure response is returned to the frontend.
       
 - 📤 Email Handling (Server Side)
-     - • The Express backend processes the request and securely sends the email via Nodemailer.
-     - • No database is involved, making the backend lightweight and purpose-driven.
+     - The Express backend processes the request and securely sends the email via Nodemailer.
+     - No database is involved, making the backend lightweight and purpose-driven.
       
 This minimal yet complete architecture highlights how frontend and backend can communicate seamlessly, even in a primarily static portfolio.
 
