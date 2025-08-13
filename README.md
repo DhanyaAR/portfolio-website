@@ -13,11 +13,6 @@ A quick visual tour of my portfolio website — showcasing the clean UI, smooth 
 
 ![Portfolio Demo](demo/portfolio-demo.gif)
 
-#### 📺 Full Walkthrough  
-Prefer a more detailed look?  
-Check out the full walkthrough video covering all pages and design decisions here:  
-[▶️ Watch on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
 > 📌 **Note:** Personal photo has been excluded in the public version for privacy. You can view it in the demo video.
 
 
